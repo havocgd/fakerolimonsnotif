@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rolimons Webhook Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rolimons Webhook Editor</h1>
+
+    <label>Webhook URL</label>
+    <input type="text" id="webhookUrl" placeholder="https://discord.com/api/webhooks/..." />
+
+    <label>Ping Role</label>
+    <select id="roleSelect" onchange="updateRolePing()">
+      <option value="">— None —</option>
+      <option value="1340455947084107796">UGC Alerts</option>
+      <option value="123456789012345678">Limited Hunters</option>
+      <option value="987654321098765432">VIP Members</option>
+    </select>
+
+    <label>Embed Title</label>
+    <input type="text" id="title" />
+
+    <label>Embed Description</label>
+    <textarea id="description"></textarea>
+
+    <label>Embed Color (hex)</label>
+    <input type="text" id="color" value="#58b9ff" />
+
+    <label>Thumbnail URL</label>
+    <input type="text" id="thumbnail" />
+
+    <label>Author Name</label>
+    <input type="text" id="authorName" value="Rolimon's" />
+
+    <label>Author Icon URL</label>
+    <input type="text" id="authorIcon" value="https://www.rolimons.com/images/rolimons-logo-circle-padded.png" />
+
+    <label>Message Content</label>
+    <input type="text" id="content" />
+
+    <button onclick="sendWebhook()">Send Webhook</button>
+
+    <h2>Live JSON Preview</h2>
+    <pre id="jsonPreview"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
