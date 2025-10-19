@@ -5,7 +5,7 @@ body {
   padding: 20px;
 }
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 input, textarea, select {
@@ -27,4 +27,64 @@ pre {
   background: #2e2f33;
   padding: 10px;
   overflow-x: auto;
+}
+.discord-preview {
+  background: #2b2d31;
+  color: #dbdee1;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+}
+.embed-card {
+  border-left: 4px solid #5865f2;
+  background: #313338;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.embed-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.embed-header img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.embed-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 8px 0;
+}
+.embed-description {
+  margin-bottom: 8px;
+}
+.embed-fields {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.embed-fields div {
+  flex: 1;
+}
+.embed-thumbnail {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  float: right;
+}
+.emoji {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.role-ping {
+  background: #5865f2;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
