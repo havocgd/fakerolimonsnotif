@@ -21,14 +21,60 @@
       <option value="987654321098765432">VIP Members</option>
     </select>
 
-    <label>Embed Title</label>
+    <label>UGC Title</label>
     <input type="text" id="title" />
 
-    <label>Embed Description</label>
-    <textarea id="description"></textarea>
+    <label>Format Type</label>
+    <select id="formatType">
+      <option value="website">Website Format</option>
+      <option value="ingame">In-Game Format</option>
+      <option value="both">Both</option>
+    </select>
+
+    <label>Sold In Experience?</label>
+    <select id="soldInExperience">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
 
     <label>Embed Color (hex)</label>
     <input type="text" id="color" value="#58b9ff" />
+
+    <label>Stock Quantity</label>
+    <input type="text" id="quantity" />
+
+    <label>Accessory Type</label>
+    <select id="accessoryType">
+      <option value="Hat">Hat</option>
+      <option value="Hair">Hair</option>
+      <option value="Face">Face</option>
+      <option value="Neck">Neck</option>
+      <option value="Shoulder">Shoulder</option>
+      <option value="Back">Back</option>
+      <option value="Waist">Waist</option>
+      <option value="Gear">Gear</option>
+    </select>
+
+    <label>Limited Status</label>
+    <select id="limitedStatus">
+      <option value="Limited">Limited</option>
+      <option value="Not Limited">Not Limited</option>
+    </select>
+
+    <label>Sale Location Name</label>
+    <input type="text" id="saleLocationName" />
+
+    <label>Sale Location Link</label>
+    <input type="text" id="saleLocationLink" />
+
+    <label>Roblox Page Link</label>
+    <input type="text" id="robloxPageLink" />
+
+    <label>Title Link</label>
+    <input type="text" id="titleLink" />
+
+    <label>Try On Link</label>
+    <input type="text" id="tryOnLink" />
 
     <label>Thumbnail URL</label>
     <input type="text" id="thumbnail" />
@@ -36,8 +82,8 @@
     <label>Author Name</label>
     <input type="text" id="authorName" value="Rolimon's" />
 
-    <label>Author Icon URL</label>
-    <input type="text" id="authorIcon" value="https://www.rolimons.com/images/rolimons-logo-circle-padded.png" />
+    <label>Author Link</label>
+    <input type="text" id="authorLink" value="https://www.rolimons.com" />
 
     <label>Message Content</label>
     <input type="text" id="content" />
@@ -46,6 +92,9 @@
 
     <h2>Live JSON Preview</h2>
     <pre id="jsonPreview"></pre>
+
+    <h2>Live Discord-Style Preview</h2>
+    <div id="discordPreview" class="discord-preview"></div>
   </div>
 
   <script src="script.js"></script>
